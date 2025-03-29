@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.80.6"
+  },
+  "name": "astralcss",
+  "version": "3.1.0",
+  "description": "astralcss is css framework",
+  "scripts": {
+    "dev": "sass --style=expanded --source-map  --watch scss/:dist/css ",
+    "minify": "sass --style=compressed --source-map  --watch scss/:dist/css "
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "RUME ALUYA",
+  "license": "ISC"
+}

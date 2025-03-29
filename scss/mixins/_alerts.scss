@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+
+@mixin alert(){
+    border-left-width: $alert-border-width;
+    border-radius: $alert-border-radius;
+    box-shadow:$alert-box-shadow;
+    padding: $alert-padding;
+    margin-bottom: $alert-margin-bottom;
+   
+}
+@mixin alert-link(){
+text-decoration: $alert-text-decoration;
+}

@@ -1,0 +1,104 @@
+.tag {
+  padding: 8px;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 5px;
+  display: inline-block;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 4px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 500;
+  background-color: var(--tag-bg);
+  color: hsl(0, 0%, 0%);
+}
+
+.tag.tag--primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.tag.tag--secondary {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+.tag.tag--success {
+  background-color: var(--success-color);
+  color: #ffffff;
+}
+
+.tag.tag--warning {
+  background-color: var(--warning-color);
+  color: #ffffff;
+}
+
+.tag.tag--error {
+  background-color: var(--error-color);
+  color: #ffffff;
+}
+
+.tag.tag--info {
+  background-color: var(--info-color);
+  color: #ffffff;
+}
+
+.tag.tag--dark {
+  background-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.tag.tag--light {
+  background-color: rgb(247.86, 247.86, 247.86);
+  color: hsl(0, 0%, 0%);
+}
+
+.tags, .tag-group {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tags:last-child {
+  margin-bottom: -0.5rem;
+}
+
+.tags .tag:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
+.tags .tag {
+  margin-bottom: 0.4rem;
+}
+
+.tag-group.has-addons .tag:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tag-group.has-addons .tag {
+  margin-right: 0;
+}
+
+.tag-group.has-addons .tag:not(:first-child) {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.list-tags-with-addons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.list-tags-with-addons .tag-group {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=tag.css.map */

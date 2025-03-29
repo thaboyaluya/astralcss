@@ -1,0 +1,18 @@
+
+@use './variables' as *;
+
+.divider {
+    display: $divider-display;
+    width: $divider-width;
+    border-top: $divider-border-width $divider-border-style var(--border-color);
+    height: $divider-border-height;
+    margin: $divider-margin;
+}
+
+  .divider-vertical {
+      width: $divider-vertical-width;
+      height: $divider-vertical-height;
+      margin-left: $divider-vertical-margin;
+      margin-right: $divider-vertical-margin;
+      border-left: $divider-vertical-border-width $divider-vertical-border-style var(--border-color);
+  }

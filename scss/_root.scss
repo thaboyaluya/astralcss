@@ -1,0 +1,136 @@
+@use './variables' as *;
+@use './variables-dark' as *;
+@use './mixins/color-theme' as *;
+@use 'sass:color';
+
+@include color-theme(){
+  @each $name,$value in $theme-colors{
+    --#{$name}-color:#{$value};
+  };
+  --body-color:#{$as-gray-800};
+  --body-bg:#{$white};
+  --border-color:#{$as-gray-100};
+  --panel-bg: #{$white};
+  --box-shadow:0 8px 24px rgba(140, 149, 159, 0.2);
+  --hover-bg:#f6f8fa;
+  --track-bg:#f1f1f1;
+  --track-thumb:#c1c1c1;
+  --disabled-bg:#f0f0f0;
+  --table-bg:rgba(242, 242, 242, .5);
+  --tag-bg: #f0f0f0;
+  --testimonial-color:#{$as-gray-600};
+  --testimonial-bg:#{$as-gray-100};
+  --input-check-bg: #f6f8fa;
+  --alert-success-bg: #eefcf1;
+  --alert-error-bg: #fcf7f7;
+  --alert-warning-bg: #f9fbda;
+  --alert-info-bg: #e7fffb;
+  --alert-primary-bg: #f3fdfd;
+  --alert-secondary-bg: #f5f5f5;
+  --alert-default-bg: #f3f3f3;
+  
+  
+}
+@include color-theme(light,true,data){
+  @each $name,$value in $theme-colors{
+    --#{$name}-color:#{$value};
+  };
+  --body-color:#{$as-gray-800};
+  --body-bg:#{$white};
+  --border-color:#{$as-gray-100};
+  --panel-bg: $white;
+  --box-shadow:0 8px 24px rgba(140, 149, 159, 0.2);
+  --hover-bg:#f6f8fa;
+  --track-bg:#f1f1f1;
+  --track-thumb:#c1c1c1;
+  --disabled-bg:#f0f0f0;
+  --table-bg:rgba(242, 242, 242, .5);
+  --tag-bg: #f0f0f0;
+  --testimonial-color:#{$as-gray-600};
+  --testimonial-bg:#{$as-gray-100};
+  --input-check-bg: #f6f8fa;
+  --alert-success-bg: #eefcf1;
+  --alert-error-bg: #fcf7f7;
+  --alert-warning-bg: #f9fbda;
+  --alert-info-bg: #e7fffb;
+  --alert-primary-bg: #f3fdfd;
+  --alert-secondary-bg: #f5f5f5;
+  --alert-default-bg: #f3f3f3;
+}
+
+
+
+
+
+
+// Dark Theme
+
+@include color-theme(dark){
+
+  @each $name,$value in $theme-colors{
+    @if $name =='light'{
+      --#{$name}-color:rgb(249 249 249);
+    }@else{
+      --#{$name}-color:#{color.adjust($value,$lightness:-15%)};
+    }
+  }
+  --body-color:#{$body-color-dark};
+  --body-bg:#{$body-bg-dark};
+  --border-color:#{$border-color-dark};
+  --box-shadow:#{$box-shadow-dark};
+  --hover-bg:#{$hover-bg-dark};
+  --track-bg:#{$track-bg-dark};
+  --track-thumb:#{$track-thumb-dark};
+  --disabled-bg:#{$disabled-bg-dark};
+  --table-bg:#{$table-bg-dark};
+  --tag-bg: #c7c7c7;
+  --testimonial-color:rgba(156, 163, 175,.4);
+  --testimonial-bg:rgba(31, 41, 55, .4);
+  --panel-bg:#{$panel-bg-dark};
+  --input-check-bg: #{$input-check-bg};
+  --alert-success-bg: #{$alert-success-bg-dark};
+  --alert-error-bg: #{$alert-error-bg-dark};
+  --alert-warning-bg: #{$alert-warning-bg-dark};
+  --alert-info-bg: #{$alert-info-bg-dark};
+  --alert-primary-bg: #{$alert-primary-bg-dark};
+  --alert-secondary-bg: #{$alert-secondary-bg-dark};
+  --alert-default-bg: #{$alert-default-bg-dark};
+}
+
+
+
+
+@include color-theme(dark,true,data){
+
+  @each $name,$value in $theme-colors{
+    @if $name =='light'{
+      --#{$name}-color:rgb(249 249 249);
+    }@else{
+      --#{$name}-color:#{color.adjust($value,$lightness:-15%)};
+    }
+  }
+  --body-color:#{$body-color-dark};
+  --body-bg:#{$body-bg-dark};
+  --border-color:#{$border-color-dark};
+  --box-shadow:#{$box-shadow-dark};
+  --hover-bg:#{$hover-bg-dark};
+  --track-bg:#{$track-bg-dark};
+  --track-thumb:#{$track-thumb-dark};
+  --disabled-bg:#{$disabled-bg-dark};
+  --table-bg:#{$table-bg-dark};
+  --tag-bg: #c7c7c7;
+  --testimonial-color:rgba(156, 163, 175,.4);
+  --testimonial-bg:rgba(31, 41, 55, .4);
+  --panel-bg:#{$panel-bg-dark};
+  --input-check-bg: #{$input-check-bg};
+  --alert-success-bg: #{$alert-success-bg-dark};
+  --alert-error-bg: #{$alert-error-bg-dark};
+  --alert-warning-bg: #{$alert-warning-bg-dark};
+  --alert-info-bg: #{$alert-info-bg-dark};
+  --alert-primary-bg: #{$alert-primary-bg-dark};
+  --alert-secondary-bg: #{$alert-secondary-bg-dark};
+  --alert-default-bg: #{$alert-default-bg-dark};
+}
+
+
+

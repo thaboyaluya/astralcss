@@ -1,0 +1,64 @@
+@use './mixins/container' as *;
+@use './mixins/alerts' as *;
+@use 'variables' as *;
+@use 'sass:color';
+
+
+
+
+.alert {
+    background-image: radial-gradient(var(--alert-default-bg, #f3f3f3), var(--alert-default-bg, #f3f3f3));
+    color: color.adjust($as-gray-200, $lightness: -40%);
+    border: 0 solid color.adjust($as-gray-200, $lightness: -20%);
+    @include alert();
+}
+.alert .alert-link{
+    color: color.adjust($as-gray-200, $lightness: -40%) !important;
+     @include alert-link()
+}
+.alert--success {
+    background-image: radial-gradient(var(--alert-success-bg, #eefcf1), var(--alert-success-bg, #eefcf1));
+    color: color.adjust($success-color, $lightness: -20%);
+    border: 0 solid color.adjust($success-color, $lightness: -5%);
+    @include alert();
+}
+.alert--error {
+    background-image: radial-gradient(var(--alert-error-bg, #fcf7f7), var(--alert-error-bg, #fcf7f7));
+    color: color.adjust($error-color, $lightness: -20%);
+    border: 0 solid color.adjust($error-color, $lightness: -5%);
+    @include alert();
+}
+.alert--warning {
+    background-image: radial-gradient(var(--alert-warning-bg, #f9fbda), var(--alert-warning-bg, #f9fbda));
+    color: color.adjust($warning-color, $lightness: -40%);
+    border: 0 solid color.adjust($warning-color, $lightness: -10%);
+    @include alert();
+}
+.alert--secondary {
+    background-image: radial-gradient(var(--alert-secondary-bg, #f5f5f5), var(--alert-secondary-bg, #f5f5f5));
+    color: color.adjust($secondary-color, $lightness: -5%);
+    border: 0 solid color.adjust($secondary-color, $lightness: -10%);
+    @include alert();
+}
+.alert--primary {
+    background-image: radial-gradient(var(--alert-primary-bg, #f3fdfd), var(--alert-primary-bg, #f3fdfd));
+    color: color.adjust($primary-color, $lightness: -20%);
+    border: 0 solid color.adjust($primary-color, $lightness: -10%);
+    @include alert();
+}
+.alert--info {
+    background-image: radial-gradient(var(--alert-info-bg, #e7fffb), var(--alert-info-bg, #e7fffb));
+    color: color.adjust($info-color, $lightness: -20%);
+    border: 0 solid color.adjust($info-color, $lightness: -10%);
+    @include alert();
+}
+@each $name,$value in $theme-colors{
+    .alert--#{$name} .alert-link{
+        color: color.adjust($value, $lightness: -20%) !important;
+        @if $name =='warning'
+        {
+            color: color.adjust($value, $lightness: -40%)!important;
+        }
+         @include alert-link()
+    }
+}

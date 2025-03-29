@@ -1,0 +1,32 @@
+@use '../variables' as *;
+
+
+@mixin dropdown-menu(){
+    position: absolute;
+    z-index: $drop-down-menu-z-index;
+    display: none;
+    min-width: $drop-down-menu-min-width;
+    font-size: $drop-down-menu-font-size;
+    padding: $drop-down-menu-padding-y  $drop-down-menu-padding-x  ;
+    margin: $drop-down-menu-margin;
+    margin-top: $drop-down-menu-margin-top;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border-radius: $drop-down-menu-border-radius;
+    transition: display 3s;
+    box-shadow: $drop-down-menu-box-show;
+}
+
+@mixin dropdown-menu-items(){
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none !important;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}

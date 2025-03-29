@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+@mixin card(){
+    margin: $size-4 $size-0;
+    border-radius: $borderRadius-medium;
+    display: -ms-flexbox;
+    background-clip: border-box;
+    display: flex;
+    min-width: $card-min-width;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-shadow: $card-box-shadow 
+    !important
+}

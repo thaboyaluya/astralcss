@@ -1,0 +1,51 @@
+@use './variables' as *;
+.tabs{
+    -webkit-overflow-scrolling: touch;
+    align-items: stretch;
+    font-size: $size-4;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: auto;
+    margin: 15px 0;
+    -moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+transition: all .5s;
+a{
+    border-bottom-color: var(--border-color);
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: .5rem 1rem;
+    vertical-align: top;
+    cursor: pointer; 
+    color: var(--body-color);
+    align-items: center;
+    display: flex;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}  
+a:hover{
+    border-bottom-color: $as-gray-500;
+}
+li i {
+    padding-right: .5rem;
+}
+li.is-active a{
+    border-bottom-color: $as-gray-500;
+    pointer-events: none;
+}
+ ul{
+    display: flex;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    align-items: center;
+    border-bottom-color: var(--border-color);
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+ }
+ li{
+    display: block;
+ }
+}

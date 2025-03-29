@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+
+@mixin panel(){
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: $panel-padding;
+    border-radius: $panel-border-radius;
+    -webkit-box-shadow: $panel-box-shadow;
+    box-shadow: $panel-box-shadow;
+    margin: $panel-margin;  
+}
+

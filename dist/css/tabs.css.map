@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/tabs.scss","../../scss/_variables.scss"],"names":[],"mappings":"AACA;EACI;EACA;EACA,WCmPI;EDlPJ;EACA;EACA;EACA;EACA;EACA;EACJ;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI,qBCgMU;;AD9Ld;EACI;;AAEJ;EACI,qBC0LU;EDzLV;;AAEH;EACG;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEH;EACG","file":"tabs.css"}

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/article.scss","../../scss/_variables.scss"],"names":[],"mappings":"AAGA;EACA,QCobiB;EDnbjB,YCiboB;EDhbpB,eCibuB;EDhbvB;EACA;;AAGG;EACC,wBC2amB;ED1anB,yBC0amB;;ADxapB;EACC,SCyamB;EDxanB,YC2agB;;AD1ad;EACE,iBC0auB;;ADva5B;EACC,SCmaa;;ADjad;EACC,WCiae;;AD/ZhB;EACC,SC6Za;;AD3Zd;EACC,YC8ZgB;;AD5ZjB;EACC,iBC0Z2B","file":"article.css"}

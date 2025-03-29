@@ -1,0 +1,16 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+@mixin chip(){
+    height: $chip-height;
+    font-size: $chip-font-size;
+    line-height: $chip-line-height;
+    padding: $chip-padding-y $chip-padding-x;
+    border-radius: $chip-border-radius;
+    margin-right: $chip-margin-right;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $chip-font-weight;
+  user-select: none 
+}

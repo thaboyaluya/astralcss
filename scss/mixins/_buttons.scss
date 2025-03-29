@@ -1,0 +1,31 @@
+@use '../variables' as *;
+
+@mixin button(){
+    line-height: $form-button-line-height;
+    padding-top: $form-button-padding-y;
+    padding-bottom: $form-button-padding-y;
+    padding-left: $form-button-padding-x;
+    padding-right: $form-button-padding-x;
+    border-radius:$form-button-border-radius;
+    outline: $form-button-outline!important;
+    font-size: inherit;
+    font-family: inherit;
+    display: inline-block;
+    margin: $form-button-margin;
+    vertical-align: baseline;
+    appearance: none;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+}
+@mixin small-button(){
+    padding: $form-button-sm-padding-y $form-button-sm-padding-x !important;
+    font-size: $form-button-sm-font-size !important;
+    line-height: $form-button-sm-line-height !important;
+}
+@mixin large-button(){
+    padding: $form-button-lg-padding-y $form-button-lg-padding-x !important;
+    font-size: $form-button-lg-font-size !important;
+    line-height: $form-button-lg-line-height !important;
+}
+

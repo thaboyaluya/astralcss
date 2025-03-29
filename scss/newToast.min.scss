@@ -1,0 +1,67 @@
+@use 'variables' as *;
+@use './mixins/newToast' as *;
+
+
+.newToast{
+    @include new-toast();
+    color: var(--body-color);
+    background-color: var(--body-bg);
+    border: 1px solid var(--border-color);
+}
+.newToast-content {
+    padding:$size-4;
+    font-weight:$text-weight-medium;
+    user-select: none;
+}
+
+@each $name,$value in $theme-colors{
+    .newToast--#{$name} .newToast-icon {
+        background-color: var(--#{$name}-color);
+    }
+}
+.newToast--loading .newToast-icon {
+background-color: $as-gray-200;
+}
+
+
+
+.newToast-dismissButton {
+    max-height: 54px;
+    padding: $size-4;
+    color: inherit;
+    background-color: rgba(0,0,0,0);
+    border: 0
+}
+
+
+.newToast-icon {
+    @include new-toast-icon();
+    color: var(--body-color);
+    background-color: var(--primary-color);
+}
+
+@media (min-width: 0px) {
+    .newToast {
+        width:max-content;
+        max-width: 450px;
+        margin: $size-4
+    }
+}
+.newToast .octicon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: currentcolor;
+    overflow: visible !important;
+}
+.newToast--spinner {
+    animation: .6s linear infinite Toast--spinner
+}
+@keyframes Toast--spinner {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
