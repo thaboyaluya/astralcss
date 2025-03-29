@@ -24,7 +24,7 @@
 Install Astral.CSS with npm
 
 ```bash
-  npm install astralcss@3.1.0
+  npm i astralcss-3.1
   cd my-project
 ```
 
