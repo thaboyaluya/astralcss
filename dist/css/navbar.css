@@ -40,7 +40,6 @@
   padding: 0.5rem 1rem;
   color: hsl(0, 0%, 41%);
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   text-decoration: none !important;
 }
 
@@ -113,7 +112,7 @@
 
 .nav-link:active, .nav-link.active {
   color: rgb(9.1, 101.5, 158.9);
-  pointer-events: none;
+ 
 }
 
 .nav-link.disabled {

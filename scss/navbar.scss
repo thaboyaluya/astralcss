@@ -47,7 +47,6 @@ user-select: none;
     padding: .5rem 1rem;
     color: $as-gray-600;
     text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     text-decoration: none !important;
 }
 .navbar-light{
@@ -129,7 +128,7 @@ user-select: none;
 }
 .nav-link:active,.nav-link.active {
     color: color.adjust($primary-color, $lightness: -20%);
-    pointer-events: none;
+ 
 }
 .nav-link.disabled {
     color: #6c757d;
