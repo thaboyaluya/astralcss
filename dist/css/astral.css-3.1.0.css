@@ -8269,7 +8269,6 @@ a.button.button-light:hover {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0;
-  position: relative;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -8303,7 +8302,6 @@ a.button.button-light:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  display: block;
   padding: 0.5rem 1rem;
   color: hsl(0, 0%, 41%);
   text-decoration: none;
