@@ -9,8 +9,7 @@
   "version": "3.1.0",
   "description": "astralcss is css framework",
   "scripts": {
-    "dev": "sass --style=expanded --source-map  --watch scss/:dist/css ",
-    "minify": "sass --style=compressed --source-map  --watch scss/:dist/css "
+    "dev": "sass --style=expanded --source-map  --watch scss/:dist/css "
   },
   "keywords": [
     "sass"
